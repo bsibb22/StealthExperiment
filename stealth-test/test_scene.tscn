@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxkqwumylxfvq"]
+[gd_scene load_steps=4 format=3 uid="uid://dxkqwumylxfvq"]
 
 [ext_resource type="Script" path="res://Scripts/GuardManager.gd" id="1_ijm71"]
 [ext_resource type="Texture2D" uid="uid://ctuxnubbyogvc" path="res://square.png" id="2_pmjtg"]
+[ext_resource type="Script" path="res://GuardAI.gd" id="3_ab5it"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -12,17 +13,56 @@ script = ExtResource("1_ijm71")
 modulate = Color(1, 0, 0, 1)
 scale = Vector2(20, 20)
 texture = ExtResource("2_pmjtg")
+script = ExtResource("3_ab5it")
 
 [node name="Guard2" type="Sprite2D" parent="GuardGraph"]
 modulate = Color(1, 0, 0, 1)
 position = Vector2(300, -50)
 scale = Vector2(20, 20)
 texture = ExtResource("2_pmjtg")
+script = ExtResource("3_ab5it")
+suspicion = 6
 
 [node name="Guard3" type="Sprite2D" parent="GuardGraph"]
 modulate = Color(1, 0, 0, 1)
 position = Vector2(-100, 200)
 scale = Vector2(20, 20)
 texture = ExtResource("2_pmjtg")
+script = ExtResource("3_ab5it")
+
+[node name="Guard4" type="Sprite2D" parent="GuardGraph"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(700, 250)
+scale = Vector2(20, 20)
+texture = ExtResource("2_pmjtg")
+script = ExtResource("3_ab5it")
+
+[node name="Guard5" type="Sprite2D" parent="GuardGraph"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(374, 364)
+scale = Vector2(20, 20)
+texture = ExtResource("2_pmjtg")
+script = ExtResource("3_ab5it")
+
+[node name="Guard6" type="Sprite2D" parent="GuardGraph"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(373, -274)
+scale = Vector2(20, 20)
+texture = ExtResource("2_pmjtg")
+script = ExtResource("3_ab5it")
+
+[node name="Guard7" type="Sprite2D" parent="GuardGraph"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-395, 406)
+scale = Vector2(20, 20)
+texture = ExtResource("2_pmjtg")
+script = ExtResource("3_ab5it")
+
+[node name="Guard8" type="Sprite2D" parent="GuardGraph"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-930, 446)
+scale = Vector2(20, 20)
+texture = ExtResource("2_pmjtg")
+script = ExtResource("3_ab5it")
 
 [node name="Camera2D" type="Camera2D" parent="."]
