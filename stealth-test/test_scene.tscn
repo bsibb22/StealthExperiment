@@ -1,8 +1,28 @@
-[gd_scene load_steps=2 format=3 uid="uid://dxkqwumylxfvq"]
+[gd_scene load_steps=3 format=3 uid="uid://dxkqwumylxfvq"]
 
 [ext_resource type="Script" path="res://Scripts/GuardManager.gd" id="1_ijm71"]
+[ext_resource type="Texture2D" uid="uid://ctuxnubbyogvc" path="res://square.png" id="2_pmjtg"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="GuardGraph" type="Node2D" parent="."]
 script = ExtResource("1_ijm71")
+
+[node name="Guard1" type="Sprite2D" parent="GuardGraph"]
+modulate = Color(1, 0, 0, 1)
+scale = Vector2(20, 20)
+texture = ExtResource("2_pmjtg")
+
+[node name="Guard2" type="Sprite2D" parent="GuardGraph"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(300, -50)
+scale = Vector2(20, 20)
+texture = ExtResource("2_pmjtg")
+
+[node name="Guard3" type="Sprite2D" parent="GuardGraph"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-100, 200)
+scale = Vector2(20, 20)
+texture = ExtResource("2_pmjtg")
+
+[node name="Camera2D" type="Camera2D" parent="."]
